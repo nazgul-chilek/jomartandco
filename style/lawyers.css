@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: 	#FFFFFA;
+	color: rgb(30, 30, 29);
+}
+nav{
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+/*	position: fixed;*/
+}
+nav a{
+	transition: all ease 1s;
+}
+.main-menu ul {
+	display: inline-flex;
+	padding: 0;
+}
+.main-menu li{
+	list-style: none;
+	margin: 0 2px 0 30px;
+	padding-right: 20px;
+	border-right: 1px solid rgb(36, 77, 52);
+}
+.main-menu li:last-child{
+	border-right: 3px solid transparent; 
+}
+.main-menu a{
+	text-decoration: none;
+	color: rgb(36, 77, 52);
+	font-size: 1.2rem;
+}
+.main-menu a:hover{
+	color: 	#F0CB7B;
+}
+#saidBar{
+	width: 400px;
+	height: 100vh;
+	position: fixed;
+	left: -420px;
+	top: 0;
+	transition: all ease 1s;
+	background-color: #FFFFFA;
+	color: rgb(36, 77, 52);
+	z-index: 2;
+	
+}
+.said-menu ul {
+	display: flex;
+	flex-direction: column;
+}
+.said-menu li{
+	list-style: none;
+	margin-left: 50px;
+}
+.said-menu a{
+	padding:0 20px;
+	text-decoration: none;
+	color: rgb(36, 77, 52);
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(36, 77, 52);
+	
+}
+.said-menu a:hover{
+	color: 	#F0CB7B;
+}
+#close{
+	margin-left: 200px;
+	margin-bottom: 50px;
+}
+.brand{
+	width: 180px;
+}
+.menu-toggle{
+	opacity: 0;
+	position: absolute;
+}
+.menu-btn{
+	padding: 1rem;
+	display: none;
+	color: rgb(36, 77, 52);
+	position: absolute;
+	left: 20%;
+	top: 30px;
+}
+.header-main{
+	width: 100%;
+	height: 300px;
+	 background: url('https://images.pexels.com/photos/1913201/pexels-photo-1913201.jpeg?cs=srgb&dl=-1913201.jpg&fm=jpg')bottom/cover;
+	
+	position: relative;
+}
+.header-main::after{
+	content: 'International Low Services';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(9, 33, 11, 0.6);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 35px;
+}
+.services{
+	width: 90%;
+	color: rgb(30, 30, 29);
+	margin: 0 5%;
+	text-align: center;
+	padding: 2%;
+}
+.services h1{
+	margin: 0;
+}
+.empty{
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+.empty div{
+	background-color: rgb(36, 77, 52);
+	width: 40%;
+	height: 3px;
+	margin:  0 10%;
+}
+section {
+	width: 100%;
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlymyiPpUdKwPCUSAH3i9BoHy5udL-YDR4RPJ5BKKeHPGYLBYx') top/cover;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(250,250,250, .4); 
+}
+/*rgba(240,203,123, .2);*/
+.about-us{
+	width: 80%;
+	margin: 0 auto;
+}
+.teem{
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.teem div{
+	width: 40%;
+	margin: 2%;
+	display:inline-flex;
+}
+.teem div img{
+	width: 300px;
+	height: 300px;
+}
+.teem-inner{
+	display: flex;
+	flex-direction: column;
+}
+.media i{
+	font-size: 20px;
+	color: rgb(36, 77, 52); 
+	border: 2px solid rgb(36, 77, 52);
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.media i:hover{
+	transform: scale(1.1);
+}
+.media .fa-facebook-f{
+	padding: 5px 10px;
+}
+footer img {
+	width: 50px;
+}
+footer{
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	color:  rgb(36, 77, 52);
+	border-top: 3px solid rgb(240,203,123);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 1050px){
+	.main-menu a{
+		font-size: 1rem;
+	}
+	.slide{
+		font-size:1.5rem;
+	}
+	.carousel{
+		height: 350px;
+	}
+	.slide h1{
+		margin-top:20%;
+	}
+	.teem div{
+		flex-direction: column;
+		width: 300px;
+		margin: 10px 30px;
+	}
+	
+}
+@media screen and (max-width: 970px){
+	.main-menu li{
+		margin: 0 5px;
+		padding-right: 8px
+	}
+	.slide h1{
+		font-size:34px;
+	}
+}
+
+@media screen and (max-width: 830px){
+	.menu-btn{
+		display: inline-block;
+		left: 
+	}
+	.main-menu{
+		display: none;
+	}
+	.slide h1{
+		font-size:28px;
+	}
+	nav{
+		display: inline-flex;
+		flex-direction: row-reverse;
+	}
+	.teem div{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 576px){
+	.slide h1{
+		margin-top:30%;
+	}
+}
+

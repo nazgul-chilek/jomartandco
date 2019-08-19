@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: 	#FFFFFA;
+}
+nav{
+/*	position: fixed;*/
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+nav a{
+	transition: all ease 1s;
+}
+.main-menu ul {
+	display: inline-flex;
+	padding: 0;
+}
+.main-menu li{
+	list-style: none;
+	margin: 0 2px 0 30px;
+	padding-right: 20px;
+	border-right: 1px solid rgb(36, 77, 52);
+}
+.main-menu li:last-child{
+	border-right: 3px solid transparent; 
+}
+.main-menu a{
+	text-decoration: none;
+	color: rgb(36, 77, 52);
+	font-size: 1.2rem;
+}
+.main-menu a:hover{
+	color: 	#F0CB7B;
+}
+#saidBar{
+	width: 400px;
+	height: 100vh;
+	position: fixed;
+	left: -420px;
+	top: 0;
+	transition: all ease 1s;
+	background-color: #FFFFFA;
+	color: rgb(36, 77, 52);
+	z-index: 2;
+	
+}
+.said-menu ul {
+	display: flex;
+	flex-direction: column;
+}
+.said-menu li{
+	list-style: none;
+	margin-left: 50px;
+}
+.said-menu a{
+	padding:0 20px;
+	text-decoration: none;
+	color: rgb(36, 77, 52);
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(36, 77, 52);
+	
+}
+.said-menu a:hover{
+	color: 	#F0CB7B;
+}
+#close{
+	margin-left: 200px;
+	margin-bottom: 50px;
+}
+.brand{
+	width: 180px;
+}
+.menu-toggle{
+	opacity: 0;
+	position: absolute;
+	margin-right: 200px;
+}
+.menu-btn{
+	padding: 1rem;
+	display: none;
+	color: rgb(36, 77, 52);
+	position: absolute;
+	left: 20%;
+	top: 30px;
+}
+.carousel {
+  height: 450px;
+  width: 100%;
+	position: relative;
+}
+.carousel::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top:0;
+	height: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 86, 39, .7);
+}
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 800ms;
+}
+.slide:nth-child(1) {
+    background: url('https://images.pexels.com/photos/1913201/pexels-photo-1913201.jpeg?cs=srgb&dl=-1913201.jpg&fm=jpg')center/cover;
+    opacity: 1;
+}
+.slide:nth-child(2) {
+    background: url('https://st3.depositphotos.com/12674628/17427/i/1600/depositphotos_174273894-stock-photo-lawyers.jpg')top/cover;
+	
+}
+.slide:nth-child(3) {
+    background: url('https://www.wsp.com/-/media/Project/Global/Image/Petronas-towers-exterior-view-facades/img-Petronas-Towers-and-Kuala-Lumpur-City-Centre_High-Rise.jpg?h=710&la=en-CA&w=1440&hash=2B0B5C7521DB4E9E36703FD1A4745253593F0AA5')center/cover;
+}
+.slide[data-state=active] {
+  display: block;
+}
+.slide h1{
+	margin-top: 20%;
+} 
+.indicators {
+	opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.services{
+	width: 90%;
+	color: rgb(30, 30, 29);
+	margin: 0 2%;
+	text-align: center;
+	padding: 2%;
+}
+.services h1{
+	margin: 0 20px;
+}
+.empty{
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+.empty div{
+	background-color: rgb(36, 77, 52);
+	width: 50%;
+	height: 3px;
+	margin:  0 5%;
+}
+.header-main{
+	width: 100%;
+	height: 400px;
+	 background: url('https://www.osmos-group.com/sites/default/files/styles/project_1170x550/public/Projets/igh.jpg?itok=VaXNyL3u')bottom/cover;
+	position: relative;
+}
+.header-main::after{
+	content: 'International Low Services';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(46, 86, 39, .7);
+	color: #fff;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+}
+.industries{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin:2% 4% 2% 6%;
+	justify-content: center;
+}
+.industries div{
+	box-shadow: 0 0 5px 1px rgba(248, 252, 191, .5);
+	margin: 20px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	align-items: center;
+	background-color: rgba(248, 252, 191, .5);
+}
+.industries img{
+	width: 250px;
+	height: 200px;
+}
+.industries h2{
+	color:color: rgb(36, 77, 52);
+	text-align: center;
+}
+footer img {
+	width: 50px;
+}
+footer{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	color:  rgb(36, 77, 52);
+	border-top: 3px solid 	#F0CB7B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.price{
+	width: 90%;
+	margin:2% 4% 2% 6%;
+	background-color: rgba(248, 252, 191, .5);
+	box-shadow: 0 0 5px 1px rgba(248, 252, 191, .5);
+}
+.price-content{
+	padding: 0 5%;
+	text-align: center;
+}
+.content{
+	width: 80%;
+	margin:0% 4% 2% 6%;
+	background-color: rgba(248, 252, 191, .5);
+	box-shadow: 0 0 5px 1px rgba(248, 252, 191, .5);
+	padding:1% 5%;
+}
+
+@media screen and (max-width: 1050px){
+	.main-menu a{
+		font-size: 1rem;
+	}
+	.slide{
+		font-size:1.5rem;
+	}
+	.carousel{
+		height: 350px;
+	}
+	.slide h1{
+		margin-top:20%;
+	}
+}
+@media screen and (max-width: 970px){
+	.main-menu li{
+		margin: 0 5px;
+		padding-right: 8px
+	}
+	.slide h1{
+		font-size:34px;
+	}
+}
+
+@media screen and (max-width: 830px){
+	.menu-btn{
+		display: inline-block;
+		left: 
+	}
+	.main-menu{
+		display: none;
+	}
+	.slide h1{
+		font-size:28px;
+	}
+	nav{
+		display: inline-flex;
+		flex-direction: row-reverse;
+	}
+}
+@media screen and (max-width: 576px){
+	.slide h1{
+		margin-top:30%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
